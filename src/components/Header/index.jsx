@@ -3,13 +3,14 @@ import React from 'react';
 
 import './header.css';
 import config from '../../utils/config';
+import logo from '../../assets/images/logo.png';
 
 const Header = () => (
   <div className="container header">
     <header className="blog-header">
       <div className="row flex-nowrap justify-content-between align-items-center">
         <div className="col-8">
-          <a className="blog-header-logo text-dark" href="/">{config.title}</a>
+          <a className="blog-header-logo text-dark" href="/"><img src={logo} /></a>
         </div>
         <div className="col-4 pt-4">
           <ul className="list-inline text-center">
